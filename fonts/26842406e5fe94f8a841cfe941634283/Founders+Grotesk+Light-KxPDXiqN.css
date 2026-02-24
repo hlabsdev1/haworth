@@ -1,0 +1,63 @@
+@font-face {
+    font-family:'Founders Grotesk Light-KxPDXiqN';
+    font-style: normal;
+    font-weight: 400;
+    unicode-range:U+fa10, U+fa12-fa6d, U+fb00-fb04, U+fe10-fe19, U+fe30-fe42, U+fe44-fe52, U+fe54-fe66, U+fe68-fe6b, U+ff02, U+ff04, U+ff07, U+ff51, U+ff5b, U+ff5d, U+ff5f-ff60, U+ff66, U+ff69, U+ff87, U+ffa1-ffbe, U+ffc2-ffc7, U+ffca-ffcf, U+ffd2-ffd6;
+    src:url('../../fonts/26842406e5fe94f8a841cfe941634283/foundersgrotesk-lightJP[3].woff2') format('woff2');
+}
+@font-face {
+    font-family:'Founders Grotesk Light-KxPDXiqN';
+    font-style: normal;
+    font-weight: 400;
+    unicode-range:U+2105, U+2109-210a, U+210f, U+2121, U+2126-2127, U+212b, U+212e, U+2135, U+213b, U+21b8-21b9, U+21c4-21c6, U+21cb-21cc, U+21d0, U+21e6-21e9, U+21f5, U+2202-2203, U+2205-2206, U+2208-220b, U+220f, U+2211, U+2213, U+221a, U+221d, U+2220, U+2223, U+2225-2226, U+2228, U+222a-222e, U+2234-2237, U+223d, U+2243, U+2245, U+2248, U+224c, U+2260, U+2262, U+2264-2265, U+226e-226f, U+2272-2273, U+2276-2277, U+2283-2287, U+228a-228b, U+2295-2299, U+22a0, U+22a5, U+22bf, U+22da-22db, U+22ef, U+2305-2307, U+2318, U+2329-232a, U+23b0-23b1, U+23be-23cc, U+23ce, U+23da-23db, U+2423, U+2469-24c1, U+24c3-24d0;
+    src:url('../../fonts/26842406e5fe94f8a841cfe941634283/foundersgrotesk-lightJP[58].woff2') format('woff2');
+}
+@font-face {
+    font-family:'Founders Grotesk Light-KxPDXiqN';
+    font-style: normal;
+    font-weight: 400;
+    unicode-range:U+061f, U+0640, U+2015, U+201b, U+2020-2021, U+2030, U+204f, U+25cc, U+2e28-2e29, U+2e41, U+1e900-1e95f;
+    src:url('../../fonts/26842406e5fe94f8a841cfe941634283/foundersgrotesk-lightAdlamUnjoinedadlam.woff2') format('woff2');
+}
+@font-face {
+    font-family:'Founders Grotesk Light-KxPDXiqN';
+    font-style: normal;
+    font-weight: 400;
+    unicode-range:U+0100-0130, U+0132-0151, U+0154-024f, U+0259, U+1e00-1eff, U+20a0-20ab, U+20ad-20cf, U+2113, U+2c60-2c7f, U+a720-a7ff;
+    src:url('../../fonts/26842406e5fe94f8a841cfe941634283/foundersgrotesk-lightAdlamUnjoinedlatin-ext.woff2') format('woff2');
+}
+@font-face {
+    font-family:'Founders Grotesk Light-KxPDXiqN';
+    font-style: normal;
+    font-weight: 400;
+    unicode-range:U+2080, U+208c-208e, U+2092, U+20db, U+20e0, U+2117, U+2120, U+2133, U+21a0, U+21af, U+21b5, U+21ba-21bb, U+21ca, U+2217-2219, U+2256, U+22b0-22b1, U+22b9, U+22c5-22c6, U+2304, U+230b, U+2313, U+2323, U+239b, U+239d-239e, U+23a0;
+    src:url('../../fonts/26842406e5fe94f8a841cfe941634283/foundersgrotesk-lightSC[90].woff2') format('woff2');
+}
+@font-face {
+    font-family:'Founders Grotesk Light-KxPDXiqN';
+    font-style: normal;
+    font-weight: 400;
+    unicode-range:U+02d0, U+02dd, U+207a-207f, U+2081-2084, U+2153-2154;
+    src:url('../../fonts/26842406e5fe94f8a841cfe941634283/foundersgrotesk-lightKR[99].woff2') format('woff2');
+}
+@font-face {
+    font-family:'Founders Grotesk Light-KxPDXiqN';
+    font-style: normal;
+    font-weight: 400;
+    unicode-range:U+02c7, U+02d8-02d9, U+02db, U+0307, U+1400-167f, U+18b0-18f5;
+    src:url('../../fonts/26842406e5fe94f8a841cfe941634283/foundersgrotesk-lightCanadianAboriginalcanadian-aboriginal.woff2') format('woff2');
+}
+@font-face {
+    font-family:'Founders Grotesk Light-KxPDXiqN';
+    font-style: normal;
+    font-weight: 400;
+    unicode-range:U+0000-00ff, U+0131, U+0152-0153, U+02bb-02bc, U+02c6, U+02da, U+02dc, U+2000-2014, U+2016-201a, U+201c-201f, U+2022-202f, U+2031-204e, U+2050-206f, U+2074, U+20ac, U+2122, U+2191, U+2193, U+2212, U+2215, U+feff, U+fffd;
+    src:url('../../fonts/26842406e5fe94f8a841cfe941634283/foundersgrotesk-lightAdlamUnjoinedlatin.woff2') format('woff2');
+}
+@font-face {
+    font-family:'Founders Grotesk Light-KxPDXiqN';
+    font-style: normal;
+    font-weight: 400;
+    unicode-range:U+215b-215e, U+2162-2169, U+2170-2179, U+21b0-21b4, U+21bc, U+21c0, U+21cd, U+21cf, U+21d1, U+21d3, U+21e0-21e3, U+220c, U+2222, U+2250-2253, U+225a, U+2270-2271, U+2279-227b, U+2280-2281, U+22a3-22a4, U+22bb-22bc, U+22ce-22cf, U+22ee, U+2314;
+    src:url('../../fonts/26842406e5fe94f8a841cfe941634283/foundersgrotesk-lightKR[98].woff2') format('woff2');
+}

@@ -1,0 +1,280 @@
+
+<!doctype html>
+<html lang="en" class="view html5-player">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <!-- BEGIN CUSTOM HEAD HTML -->
+    <!-- END CUSTOM HEAD HTML -->
+
+        <base id="cerosBase">
+
+        <script type="text/javascript">
+            (function () {
+                var locationWithNoQuery = document.location.href.split('?')[0].split('#')[0];
+                locationWithNoQuery = locationWithNoQuery.replace(/[><\(\)'"]/g,'');
+
+                if (document.location.pathname.match(/\.html$/)) {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/[^\/]*\.html$/, '');
+                } else {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/(\/p|\/page)\/[a-z0-9-]*\/?$/, '/');
+                }
+
+                document.getElementById('cerosBase').href = window.cerosBaseUrl;
+            })();
+        </script>
+
+
+        <script
+            type="text/javascript"
+            src="assets/ajax/libs/jquery/3.5.1/jquery.min.js"
+            integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2"
+            crossorigin="anonymous"
+        >
+        </script>
+
+    <script
+        type="text/javascript"
+        src="assets/webfont-1.6.3.js"
+        integrity="sha384-kQVYcp73Z7mvY2x3q7xBfpTuS6aJIHGim/OtvzZUbwB1z0ewAfxXJkgf1187hS/j"
+        crossorigin="anonymous"
+    >
+    </script>
+
+
+    <script type="text/javascript">
+        window.cerosContext = {
+        viewAssetsDomain    : '',
+            publicAssetsBaseUrl: 'assets/',
+            faviconUrl: '',
+            isEmbedded: top != window,
+            isVanityDomain: location.hostname !== 'view.ceros.com',
+            previewMode: false,
+            logging: {
+            emitDevWarnings : false,
+                modes: {
+                        'debug': false,
+                        'info': false,
+                        'warn': true,
+                        'error': true
+                }
+            },
+            usePageSlugsInNavigation: false,
+            usePreviewBanner: false,
+            useDocumentLoadingSpinner: true,
+            analyticsApplicationKey: 'player',
+            analyticsMaxDwellTime: 1800,
+            analyticsUrl: '',
+            apiVersion: 'v1',
+            revalidateWithCore: false,
+
+            ajaxCaching: true,
+        mediaDomainMap: null,
+            rollbarPlayerAccessKey: '5a0bfa1f72824a2eaef56e175f59ba24',
+            deploymentName: 'prod',
+            appVersion: 'hotfix.8.14.92.b521836ab5842812bc1fd8570198bcb5f084a390',
+            rollbarMaxItems: 5,
+        isExported: true,
+            isStudio: false,
+
+            openGraphUrl: '',
+            accountSlug: 'haworth',
+        gracePeriodExpired  : 9007199254740991 < Date.now() / 1000,
+            appSlug: 'car-program',
+            issueAliasSlug: 'general-car-program',
+            issue: {"id":"1100331","project":"71464","wipExperienceVersion":"4820452","publishedExperienceVersion":"5273863","primaryIssueAlias":1570092,"lastUnpublishedByMember":null,"vanityDomain":"2035","slug":"experience-682377b2927b5","name":"Haworth Car Program","status":"published","creationDate":"2025-05-13T16:47:46.000Z","lastModifiedDate":"2025-12-17T15:57:29.000Z","deletionDate":null,"firstPublishedDate":"2025-06-04T17:13:47.000Z","createdByMemberId":"14537","firstPageThumbnailUrl":"\/\/media.ceros.com\/haworth\/studio-thumbnails\/page-682377b2948d3.jpg","importShared":false,"lastPublishedDate":"2025-12-17T15:57:35.000Z","lastModifiedByMemberId":"10287","lastPublishedByMemberId":"10287","passwordProtected":false,"auth0UserId":null,"isTemplate":false,"templateSubtitle":null,"templateThumbnailUrl":null,"htmlLanguage":"en","lastUnpublishedDate":null,"resourceId":"682377b2-cf2dbd42ff70d","isSsoProtected":false,"markupId":null,"origin":"blank_canvas","partner":null,"isSparkExperience":false,"sparkExperienceId":null,"title":"Haworth Car Program"},
+            docVersion: {"id":"5273863","experience":"1100331","committedByMember":"10287","slug":"experience-version-6942d2edbb54f","loadLowRes":true,"googleAnalyticsId":null,"committedJsonUrl":"http:\/\/media.ceros.com\/haworth\/doc-version-json\/v11\/experience-version-6942d2edbb54f.js","themingBackgroundImageUri":null,"seoTitleKeywords":"","seoMetaKeywords":"","seoMetaDescription":"","canonicalUrlOverride":"","editorPagesManifest":[{"uri":"\/v1\/account\/haworth\/pages\/page-6942d2edbb55c","initiallyDisabled":false,"thumbnail":"https:\/\/media.ceros.com\/haworth\/page-thumbnails\/2025\/12\/17\/4ad0f3b13ff5c551d86750cdc63f04e0\/page-thumbnail.jpg?imageOpt=1&crop=870,489,x0,y0"},{"uri":"\/v1\/account\/haworth\/pages\/page-6942d2edd31e4","initiallyDisabled":false,"thumbnail":"https:\/\/media.ceros.com\/haworth\/page-thumbnails\/2025\/12\/17\/a8a10fdf90bc759691da4773d204ce1e\/page-thumbnail.jpg?imageOpt=1&crop=870,489,x0,y0"},{"uri":"\/v1\/account\/haworth\/pages\/page-6942d2ee023b5","initiallyDisabled":false,"thumbnail":"https:\/\/media.ceros.com\/haworth\/page-thumbnails\/2025\/12\/17\/7152150359ded9a844f2691065bf7903\/page-thumbnail.jpg?imageOpt=1&crop=870,489,x0,y0"},{"uri":"\/v1\/account\/haworth\/pages\/page-6942d2ee21a2b","initiallyDisabled":false,"thumbnail":"https:\/\/media.ceros.com\/haworth\/page-thumbnails\/2025\/12\/17\/1f8d764c6fcca545160c3258d0c4dead\/page-thumbnail.jpg?imageOpt=1&crop=870,489,x0,y0"},{"uri":"\/v1\/account\/haworth\/pages\/page-6942d2ee52c89","initiallyDisabled":false,"thumbnail":"https:\/\/media.ceros.com\/haworth\/page-thumbnails\/2025\/12\/17\/7a077abc8a78c3c7bc3dd3471337a2e3\/page-thumbnail.jpg?imageOpt=1&crop=870,489,x0,y0"},{"uri":"\/v1\/account\/haworth\/pages\/page-6942d2ee6ec2d","initiallyDisabled":false,"thumbnail":"https:\/\/media.ceros.com\/haworth\/page-thumbnails\/2025\/12\/17\/8cc6885db413b4de492e97981aefd666\/page-thumbnail.jpg?imageOpt=1&crop=870,489,x0,y0"},{"uri":"\/v1\/account\/haworth\/pages\/page-6942d2ee9a7e4","initiallyDisabled":false,"thumbnail":"https:\/\/media.ceros.com\/haworth\/page-thumbnails\/2025\/12\/17\/0996b9414d838bb192ba87d7e5e47369\/page-thumbnail.jpg?imageOpt=1&crop=870,489,x0,y0"},{"uri":"\/v1\/account\/haworth\/pages\/page-6942d2eebe882","initiallyDisabled":false,"thumbnail":"https:\/\/media.ceros.com\/haworth\/page-thumbnails\/2025\/12\/17\/ee730f50a972611eb78c8fa041ffed35\/page-thumbnail.jpg?imageOpt=1&crop=870,489,x0,y0"},{"uri":"\/v1\/account\/haworth\/pages\/page-6942d2eedf5b3","initiallyDisabled":false,"thumbnail":"https:\/\/media.ceros.com\/haworth\/page-thumbnails\/2025\/12\/17\/f7c223d6686ba9b304581c177b746098\/page-thumbnail.jpg?imageOpt=1&crop=870,489,x0,y0"}],"cdeExportUrl":null,"exportAppVersion":null,"creationDate":"2025-12-17T15:57:35.000Z","modificationDate":"2025-12-17T15:57:35.000Z","publishedDate":"2025-12-17T15:57:33.000Z","unsupportedBrowserRedirectUrl":"","ogTitle":"","ogDescription":"","ogImageUrl":null,"twitterTitle":"","twitterDescription":"","twitterImageUrl":null,"twitterHandle":"","lazyLoading":false,"tarExportUrl":null,"pageNamesInTitle":false,"mainContentLinkText":null,"textMode":"paragraph","zoomControlsEnabled":true,"requireUserConsentForAnalytics":0,"integrateWithCmp":0,"editableContentCount":0,"adminEditable":true,"textComponentType":"text_plus","editorMode":"some","lineHeightCompatibility":"use_baseline_offset","playerServerSideRendering":"no_player_server_side_rendering","seoMode":"disabled","editorPublishingDisabled":0,"improvedBlendingModeLayering":0,"excludeChromeFromBlurFix":0,"resourceId":"6942d2ef-c6e6e8dbd2653","flexIssueAliasSlug":null,"layoutSettings":{"layoutPrimarySetting":null,"maxTabletWidthBreakpoint":null,"maxMobileWidthBreakpoint":null,"deviceTypeMissingVariantFallback":null},"carousel":{"enabled":false,"autoTransition":false,"autoTransitionDelay":"5"},"theming":{"arrowsEnabled":false,"swipeEnabled":false,"menuEnabled":false,"backgroundColor":"#2A2A2A","menuFgColor":"#FFFFFF","menuBgColor":"#000000","backgroundImage":null}},
+            fontManifest: {"Google|Roboto|400|normal":{"familyName":"Roboto","familyGuid":"Google|Roboto","fontWeight":400,"fontStyle":"normal","unitsPerEm":2048,"ascent":1536,"variantGuid":"Google|Roboto|400|normal","variantName":"Normal","cssFamilyName":"Roboto","api":"Google"},"FontPlusUploaded|39d50c69-7033-11e9-985c-0e55d9bc9e68":{"familyName":"Founders Grotesk Light","familyGuid":"FontPlusUploaded|39d4da27-7033-11e9-985c-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":630,"variantGuid":"FontPlusUploaded|39d50c69-7033-11e9-985c-0e55d9bc9e68","variantName":"Normal","cssFamilyName":"Founders Grotesk Light-KxPDXiqN","cssFileURL":"fonts\/26842406e5fe94f8a841cfe941634283\/Founders%2BGrotesk%2BLight-KxPDXiqN.css","api":"FontPlusUploaded","woffFileURL":null},"FontPlusUploaded|3a74430e-7033-11e9-985c-0e55d9bc9e68":{"familyName":"Founders Grotesk Medium","familyGuid":"FontPlusUploaded|3a74014d-7033-11e9-985c-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":630,"variantGuid":"FontPlusUploaded|3a74430e-7033-11e9-985c-0e55d9bc9e68","variantName":"Normal","cssFamilyName":"Founders Grotesk Mediu-Vekg34lF","cssFileURL":"fonts\/e8f54127530b1a74917d6787d93caedc\/Founders%2BGrotesk%2BMediu-Vekg34lF.css","api":"FontPlusUploaded","woffFileURL":null},"FontPlusUploaded|a97fe582-3a23-11ed-9a0e-1295e118baa9":{"familyName":"Founders Grotesk Medium","familyGuid":"FontPlusUploaded|3a74014d-7033-11e9-985c-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":630,"variantGuid":"FontPlusUploaded|a97fe582-3a23-11ed-9a0e-1295e118baa9","variantName":"V2","cssFamilyName":"Founders Grotesk Mediu-uAoD5XFA","cssFileURL":"fonts\/e0c879aa1885b49f8210a8083866eb1a\/Founders%2BGrotesk%2BMediu-uAoD5XFA.css","api":"FontPlusUploaded","woffFileURL":null},"FontPlusUploaded|3aee372d-7033-11e9-985c-0e55d9bc9e68":{"familyName":"Founders Grotesk Regular","familyGuid":"FontPlusUploaded|3aee0047-7033-11e9-985c-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":630,"variantGuid":"FontPlusUploaded|3aee372d-7033-11e9-985c-0e55d9bc9e68","variantName":"Normal","cssFamilyName":"Founders Grotesk Regul-bhO15AR3","cssFileURL":"fonts\/7de1795727024a87c4bb30bf7c7c6b8b\/Founders%2BGrotesk%2BRegul-bhO15AR3.css","api":"FontPlusUploaded","woffFileURL":null},"FontPlusUploaded|b056a763-3a23-11ed-9a0e-1295e118baa9":{"familyName":"Founders Grotesk Regular","familyGuid":"FontPlusUploaded|3aee0047-7033-11e9-985c-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":630,"variantGuid":"FontPlusUploaded|b056a763-3a23-11ed-9a0e-1295e118baa9","variantName":"V2","cssFamilyName":"Founders Grotesk Regul-1PfMypsh","cssFileURL":"fonts\/7c19bc47af82318490156e36d345fc51\/Founders%2BGrotesk%2BRegul-1PfMypsh.css","api":"FontPlusUploaded","woffFileURL":null},"FontPlusUploaded|5e35280a-beb7-11e9-985c-0e55d9bc9e68":{"familyName":"Founders Grotesk Bold XCnd","familyGuid":"FontPlusUploaded|5e34efa4-beb7-11e9-985c-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":828,"variantGuid":"FontPlusUploaded|5e35280a-beb7-11e9-985c-0e55d9bc9e68","variantName":"Founders Grotesk Bold XCond","cssFamilyName":"Founders Grotesk Bold -5TggRBCm","cssFileURL":"fonts\/5c0bdf196c2a8d02ea4340ddde6c0051\/Founders%2BGrotesk%2BBold%2B-5TggRBCm.css","api":"FontPlusUploaded","woffFileURL":null},"FontPlusUploaded|5e365c18-beb7-11e9-985c-0e55d9bc9e68":{"familyName":"Founders Grotesk Medium","familyGuid":"FontPlusUploaded|5e3605e2-beb7-11e9-985c-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":839,"variantGuid":"FontPlusUploaded|5e365c18-beb7-11e9-985c-0e55d9bc9e68","variantName":"[Legacy] Normal","cssFamilyName":"Founders Grotesk Mediu-nYI4mAq0","cssFileURL":"fonts\/1e995dd6ca912a8ca3eea8a3c7ac3ac5\/Founders%2BGrotesk%2BMediu-nYI4mAq0.css","api":"FontPlusUploaded","woffFileURL":null},"FontPlusUploaded|ae71ab5e-bd0f-11e9-985c-0e55d9bc9e68":{"familyName":"Founders Grotesk","familyGuid":"FontPlusUploaded|ae70f403-bd0f-11e9-985c-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":851,"variantGuid":"FontPlusUploaded|ae71ab5e-bd0f-11e9-985c-0e55d9bc9e68","variantName":"Bold","cssFamilyName":"Founders Grotesk-Bold-BqrBMda6","cssFileURL":"fonts\/d033dd089a1e4a78253bd192c7931d29\/Founders%2BGrotesk-Bold-BqrBMda6.css","api":"FontPlusUploaded","woffFileURL":null},"FontPlusUploaded|af7c05e9-bd0f-11e9-985c-0e55d9bc9e68":{"familyName":"Founders Grotesk","familyGuid":"FontPlusUploaded|ae70f403-bd0f-11e9-985c-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":828,"variantGuid":"FontPlusUploaded|af7c05e9-bd0f-11e9-985c-0e55d9bc9e68","variantName":"Regular","cssFamilyName":"Founders Grotesk-Regul-YyV7t46C","cssFileURL":"fonts\/67c7470770ae71d6f89ab946b843e371\/Founders%2BGrotesk-Regul-YyV7t46C.css","api":"FontPlusUploaded","woffFileURL":null}},
+        whiteLabeling   : true,
+        isTrialAccount      : false,
+        allowCommerceIntegration  : false,
+        allowEmbeddedPlayerSdk    : true,
+        allowAdaptiveLayouts: true,
+            commerceSettings: {
+            panelWidth      : null,
+            panelHeight     : null,
+                productUrl: '',
+                shoppingCartUrl: '',
+            },
+                themeObj: {
+                arrowsEnabled    : false,
+                swipeEnabled     : false,
+                menuEnabled      : false,
+                    menuFgColor: '#FFFFFF',
+                    menuBgColor: '#000000',
+                    menuHoverOpacity: 0.6,
+                    backgroundColor: '#2A2A2A',
+                backgroundImage  :
+                        null
+
+                },
+            googleFontUrl: '',
+            featureFlags: {"Password Protected Experiences":true,"Getty Image Integration":false,"Getty Video Integration":false,"Accessibility":false,"(BETA) Protected Preview":false,"Cookie Compliance":true,"Position Interactions":true,"Editor":true,"New Text Tool":true,"Studio API":false,"SSO Protected Experiences":false,"Studio Redesign":true,"(New Text Tool) List And Bullets":false,"(New Text Tool) Subscript And Superscript":false,"(New Text Tool) Html Element":true,"(New Text Tool) Object States":false,"(New Text Tool) Spellcheck":false,"Editor for Creators":false,"Remove window.eval":true,"Editor Image Crop And Resize":true,"Editor Debug Mode":false,"Improved Team Management":true,"(New Text Tool) Columns":true,"Open in MarkUp":true,"Create Account from Login":true,"Individual Accounts":true,"New Text Tool Experience Converter (requires New Text Tool)":true,"Studio Lite":true,"Intercom Support Chat":true,"Editor Sign Up":true,"Beamer":true,"Showcase Experience":false,"Component Library":true,"SDR Editor Invite":false,"Force Protected Experiences":false,"Request Feedback":false,"PLG Account Creation":true,"Home Screen":true,"Seismic Integration":true,"New Selection Behavior":true,"AI Features":true,"Experience Sharing":true,"Show Import Design Files":true,"Player Server Side Rendering":false,"Floating Toolbar":true,"Getty Library Integration":false,"Use Embed Modal":true,"Onboarding":true,"Use Modern IpadOS Scrolling":true,"Allow importing PDF design files":true,"Hubspot Styling":false,"Asset Library - Ceros Assets":true,"Spark Experiences in Admin":true,"Export PDF":true,"New Selection Behavior - Mouse Up":false,"New Text Data Model Change":false,"Convert Experiences to Spark":false,"Folders":true,"New Variant Layouts":false,"Use JWTs":false,"Flex in Admin UI v2":true,"Organization Assets":false,"Stabilize Stroke in Object States":false,"Full Width Browser Scaling Fix":false,"Rest API: Embed Codes":false,"Pinned Hover Area Interaction Fix":false,"Disable Flex User Access Toggle":true,"Rest API: Media Metadata":true,"Chartblocks":false,"Flex AI Feature":true,"Rest API: Upload Policy":false,"Admin In Isolation":false,"Flex Ad in Admin":false,"Vanity Domains Polish":true,"Rest API: Video Transcoding":false,"Rest API: Background removal":true,"Rest API: Getty":false,"Appcues":true,"Rest API: Organizations":false,"Studio to Flex Copy":true,"Flex AI Experience Rebrand":false,"Flex AI Text to Video":false,"Rest API: Asset Library":false,"Rest API: Update Template":false,"Experience Report":true,"Rest API: Template Types":true,"Rest API: Vanity Domain":false,"Rest API: Organization Domains":false,"Vanity Domain Default Experience Fallback":true},
+            analyticsTrackers: {
+                cerosPlayerTracker: {enabled: true },
+                googleAnalyticsTracker: {"enabled":true,"trackingID":"G-189REVXGZH","trackPageViewsForStandaloneExperiences":true,"eventCategory":"ceros-event","trackClicks":true,"clickEventAction":"ceros-click","trackHovers":true,"hoverEventAction":"ceros-hover"},
+                googleTagManagerTracker: {"enabled":true,"containerID":"GTM-PD8X7DN","trackPageViewsForStandaloneExperiences":true,"eventCategory":"ceros-event","trackClicks":true,"clickEventAction":"ceros-click","trackHovers":true,"hoverEventAction":"ceros-hover","initializeGTMForEmbeddedExperiences":true},
+                marketoTracker: {enabled: false, accountId: '' },
+                eloquaTracker: {enabled: false, siteId: '', cookieDomain: ''},
+                universalAnalyticsTracker: {enabled: false }
+            },
+
+        
+            useOptimizedJs: true,
+        };
+    </script>
+
+    <!--
+      DISPLAY SETTINGS
+    -->
+        <meta name="viewport"
+                  content="width=device-width, initial-scale=1.0, minimum-scale=1.0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta name="monitor-signature" content="monitor:player:html5"/>
+
+    <title>Haworth Car Program</title>
+
+
+
+
+            <meta name="robots" content="noindex, nofollow"/>
+
+    <meta property="og:title" content="Haworth Car Program"/>
+        <meta property="og:image" content="media/4ad0f3b13ff5c551d86750cdc63f04e0/page-thumbnail.jpg"/>
+    <meta property="og:description" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:type" content="website"/>
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Haworth Car Program">
+    <meta name="twitter:description" content="">
+        <meta name="twitter:image" content="media/4ad0f3b13ff5c551d86750cdc63f04e0/page-thumbnail.jpg">
+
+    <script language="Javascript" id="docversion-request-script">
+        window.docVersionRequest = window.jQuery.ajax({
+            url           : "media/experience-version-6942d2edbb54f.js",
+            dataType      : 'jsonp',
+            jsonp         : false, 
+            cache         : true,  
+            jsonpCallback : "loadDocVersion_v1_account_haworth_document_versions_experience_version_6942d2edbb54f",
+            success       : window.jQuery.noop 
+        });
+    </script>
+
+    <!--
+      FONTS
+    -->
+
+
+    
+    
+        <!-- BEGIN GOOGLE ANALYTICS INTEGRATION HTML -->
+        <script async src="https://www.googletagmanager.com/gtag/js"></script>
+        <script>
+                if (top === window) {
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                    gtag('config', 'G-189REVXGZH', {
+                        send_page_view: false
+                    });
+                }
+        </script>
+        <!-- END GOOGLE ANALYTICS INTEGRATION HTML -->
+    
+
+
+    <!-- BEGIN FAVICON -->
+    <!-- END FAVICON -->
+
+    <script type="text/javascript">
+        window.cerosPlayerLoadStart = new Date();
+    </script>
+
+    <!--
+        Although the player itself no longer uses requirejs, users can still use requirejs with
+        the SDK. Therefore, we need to continue including it here... for now...
+    -->
+    <script
+        type="text/javascript"
+        src="assets/player/shared/libs/require/require-min.b03b66057d7df9b2cc9aa9c4c18aa569.js"
+        integrity="sha384-rH/J/VIetVJaWayhJ86b8lksGVJhUElxg9z9Y9OolMJqV4T70NX7Sp4smPbMzv0R"
+        crossorigin="anonymous"
+    >
+    </script>
+
+    <script
+        type="text/javascript"
+        async
+        charset="UTF-8"
+        src="assets/player/applications/html5-player/bootstrap-optimized.b66e574a610853909f0f5cbd9f610d5f.js"
+        integrity=""
+        crossorigin="anonymous"
+    >
+    </script>
+
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="assets/player/applications/html5-player/css/html5-player.f1c9752bdb20452cb9ce067cc5a32141.css"
+        integrity=""
+        crossorigin="anonymous"
+    />
+
+    <style>
+        body {
+            background-color: #2A2A2A;
+        }
+
+        body:-ms-fullscreen::-ms-backdrop {
+            background-color: #2A2A2A;
+        }
+    </style>
+
+</head>
+<body>
+
+
+        <!-- BEGIN GOOGLE TAG MANAGER INTEGRATION HTML -->
+        <noscript>
+            <iframe src="//www.googletagmanager.com/ns.html?id=GTM-PD8X7DN"
+                    height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <script>
+
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(), event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                    '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PD8X7DN');
+
+        </script>
+        <!-- END GOOGLE TAG MANAGER INTEGRATION HTML -->
+
+
+    <noscript>
+        
+    </noscript>
+
+
+<div id="main"></div>
+<div id="backgroundContainer"></div>
+
+
+    <!-- BEGIN CUSTOM HTML -->
+    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+    <!-- END CUSTOM HTML -->
+
+
+
+    <div id="page-transition-aria-live" class="sr-only" aria-live="assertive"></div>
+</body>
+</html>

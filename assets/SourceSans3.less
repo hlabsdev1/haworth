@@ -1,0 +1,33 @@
+.SourceSans3FontFace(@fontName, @fontWeight, @fontStyle) {
+  @font-face {
+    font-family: 'Source Sans 3';
+    src: url('../fonts/@{fontName}.woff2') format('woff2'),
+      url('../fonts/@{fontName}.woff') format('woff');
+    font-weight: @fontWeight;
+    font-style: @fontStyle;
+  }
+}
+
+.SourceSans3FontFace('SourceSans3-ExtraLightItalic', 200, 'italic');
+.SourceSans3FontFace('SourceSans3-ExtraLight', 200, 'normal');
+
+.SourceSans3FontFace('SourceSans3-LightItalic', 300, 'italic');
+.SourceSans3FontFace('SourceSans3-Light', 300, 'normal');
+
+.SourceSans3FontFace('SourceSans3-Italic', 400, 'italic');
+.SourceSans3FontFace('SourceSans3-Regular', 400, 'normal');
+
+.SourceSans3FontFace('SourceSans3-MediumItalic', 500, 'italic');
+.SourceSans3FontFace('SourceSans3-Medium', 500, 'normal');
+
+.SourceSans3FontFace('SourceSans3-SemiBoldItalic', 600, 'italic');
+.SourceSans3FontFace('SourceSans3-SemiBold', 600, 'normal');
+
+.SourceSans3FontFace('SourceSans3-BoldItalic', 700, 'italic');
+.SourceSans3FontFace('SourceSans3-Bold', 700, 'normal');
+
+.SourceSans3FontFace('SourceSans3-ExtraBoldItalic', 800, 'italic');
+.SourceSans3FontFace('SourceSans3-ExtraBold', 800, 'normal');
+
+.SourceSans3FontFace('SourceSans3-BlackItalic', 900, 'italic');
+.SourceSans3FontFace('SourceSans3-Black', 900, 'normal');
