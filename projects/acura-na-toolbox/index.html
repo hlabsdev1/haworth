@@ -1,0 +1,359 @@
+
+<!doctype html>
+<html lang="en" class="view html5-player">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <!-- BEGIN CUSTOM HEAD HTML -->
+    <!-- END CUSTOM HEAD HTML -->
+
+        <base id="cerosBase">
+
+        <script type="text/javascript">
+            (function () {
+                var locationWithNoQuery = document.location.href.split('?')[0].split('#')[0];
+                locationWithNoQuery = locationWithNoQuery.replace(/[><\(\)'"]/g,'');
+
+                if (document.location.pathname.match(/\.html$/)) {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/[^\/]*\.html$/, '');
+                } else {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/(\/p|\/page)\/[a-z0-9-]*\/?$/, '/');
+                }
+
+                document.getElementById('cerosBase').href = window.cerosBaseUrl;
+            })();
+        </script>
+
+
+        <script
+            type="text/javascript"
+            src="assets/ajax/libs/jquery/3.5.1/jquery.min.js"
+            integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2"
+            crossorigin="anonymous"
+        >
+        </script>
+
+    <script
+        type="text/javascript"
+        src="assets/webfont-1.6.3.js"
+        integrity="sha384-kQVYcp73Z7mvY2x3q7xBfpTuS6aJIHGim/OtvzZUbwB1z0ewAfxXJkgf1187hS/j"
+        crossorigin="anonymous"
+    >
+    </script>
+
+
+    <script type="text/javascript">
+        window.cerosContext = {
+        viewAssetsDomain    : '',
+            publicAssetsBaseUrl: 'assets/',
+            faviconUrl: '',
+            isEmbedded: top != window,
+            isVanityDomain: location.hostname !== 'view.ceros.com',
+            previewMode: false,
+            logging: {
+            emitDevWarnings : false,
+                modes: {
+                        'debug': false,
+                        'info': false,
+                        'warn': true,
+                        'error': true
+                }
+            },
+            usePageSlugsInNavigation: false,
+            usePreviewBanner: false,
+            useDocumentLoadingSpinner: true,
+            analyticsApplicationKey: 'player',
+            analyticsMaxDwellTime: 1800,
+            analyticsUrl: '',
+            apiVersion: 'v1',
+            revalidateWithCore: false,
+
+            ajaxCaching: true,
+        mediaDomainMap: null,
+            rollbarPlayerAccessKey: '5a0bfa1f72824a2eaef56e175f59ba24',
+            deploymentName: 'prod',
+            appVersion: 'hotfix.8.14.92.b521836ab5842812bc1fd8570198bcb5f084a390',
+            rollbarMaxItems: 5,
+        isExported: true,
+            isStudio: false,
+
+            openGraphUrl: '',
+            accountSlug: 'haworth',
+        gracePeriodExpired  : 9007199254740991 < Date.now() / 1000,
+            appSlug: 'car-program',
+            issueAliasSlug: 'acura-na-toolbox',
+            issue: {"id":"573719","project":"71464","wipExperienceVersion":"2154541","publishedExperienceVersion":"5273874","primaryIssueAlias":860571,"lastUnpublishedByMember":"19292","vanityDomain":"2035","slug":"experience-61d5efbba6f67","name":"Acura NA Toolbox","status":"published","creationDate":"2022-01-05T19:21:31.000Z","lastModifiedDate":"2025-12-17T16:01:12.000Z","deletionDate":null,"firstPublishedDate":"2023-01-21T00:13:51.000Z","createdByMemberId":"19292","firstPageThumbnailUrl":"\/\/media-s3-us-east-1.ceros.com\/haworth\/studio-thumbnails\/page-61d5efbb21f57.jpg","importShared":false,"lastPublishedDate":"2025-12-17T16:01:16.000Z","lastModifiedByMemberId":"10287","lastPublishedByMemberId":"10287","passwordProtected":false,"auth0UserId":null,"isTemplate":false,"templateSubtitle":null,"templateThumbnailUrl":null,"htmlLanguage":"en","lastUnpublishedDate":"2023-05-16T16:13:24.000Z","resourceId":"61d5efbb-c6f6a7a1e2609","isSsoProtected":false,"markupId":null,"origin":null,"partner":null,"isSparkExperience":false,"sparkExperienceId":null,"title":"Acura NA Toolbox"},
+            docVersion: {"id":"5273874","experience":"573719","committedByMember":"10287","slug":"experience-version-6942d3cc81684","loadLowRes":true,"googleAnalyticsId":null,"committedJsonUrl":"http:\/\/media.ceros.com\/haworth\/doc-version-json\/v11\/experience-version-6942d3cc81684.js","themingBackgroundImageUri":null,"seoTitleKeywords":"","seoMetaKeywords":"","seoMetaDescription":"","canonicalUrlOverride":"","editorPagesManifest":[{"uri":"\/v1\/account\/haworth\/pages\/page-6942d3cc81693","initiallyDisabled":false,"thumbnail":"https:\/\/media.ceros.com\/haworth\/page-thumbnails\/2025\/12\/17\/af817878e91c9f88cfe8fae80c860413\/page-thumbnail.jpg?imageOpt=1&crop=870,435,x0,y0"}],"cdeExportUrl":null,"exportAppVersion":null,"creationDate":"2025-12-17T16:01:16.000Z","modificationDate":"2025-12-17T16:01:16.000Z","publishedDate":"2025-12-17T16:01:16.000Z","unsupportedBrowserRedirectUrl":"","ogTitle":"Acura NA Toolbox","ogDescription":"","ogImageUrl":"https:\/\/media.ceros.com\/haworth\/images\/2022\/04\/22\/d5c3242d2c672ee0256ec7b14e06fef0\/acura-benefits-04-22-page-1.jpg","twitterTitle":"","twitterDescription":"","twitterImageUrl":null,"twitterHandle":"","lazyLoading":false,"tarExportUrl":null,"pageNamesInTitle":false,"mainContentLinkText":null,"textMode":"paragraph","zoomControlsEnabled":false,"requireUserConsentForAnalytics":0,"integrateWithCmp":0,"editableContentCount":0,"adminEditable":true,"textComponentType":"old_text","editorMode":"all","lineHeightCompatibility":"no_baseline_offset","playerServerSideRendering":"no_player_server_side_rendering","seoMode":"experience_and_embed","editorPublishingDisabled":0,"improvedBlendingModeLayering":0,"excludeChromeFromBlurFix":0,"resourceId":"6942d3cc-c944f5d0c2a04","flexIssueAliasSlug":null,"layoutSettings":{"layoutPrimarySetting":null,"maxTabletWidthBreakpoint":null,"maxMobileWidthBreakpoint":null,"deviceTypeMissingVariantFallback":null},"carousel":{"enabled":false,"autoTransition":false,"autoTransitionDelay":"5"},"theming":{"arrowsEnabled":true,"swipeEnabled":true,"menuEnabled":false,"backgroundColor":"#000000","menuFgColor":"#FFFFFF","menuBgColor":"#000000","backgroundImage":null}},
+            fontManifest: {"Google|Roboto|400|normal":{"familyName":"Roboto","familyGuid":"Google|Roboto","fontWeight":400,"fontStyle":"normal","unitsPerEm":2048,"ascent":1536,"variantGuid":"Google|Roboto|400|normal","variantName":"Normal","cssFamilyName":"Roboto","api":"Google"},"Uploaded|3a5f3a69-7033-11e9-985c-0e55d9bc9e68":{"familyName":"Founders Grotesk Light Italic","familyGuid":"Uploaded|3a5f1148-7033-11e9-985c-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":630,"variantGuid":"Uploaded|3a5f3a69-7033-11e9-985c-0e55d9bc9e68","variantName":"Normal italic","cssFamilyName":"Founders Grotesk Light-uETx54E5","cssFileURL":"fonts\/341fa189-8f10-42cf-8c0e-be59a6419172\/foundersgrotesk-lightitalic.css","api":"Uploaded","woffFileURL":null},"Uploaded|3a74430e-7033-11e9-985c-0e55d9bc9e68":{"familyName":"Founders Grotesk Medium","familyGuid":"Uploaded|3a74014d-7033-11e9-985c-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":630,"variantGuid":"Uploaded|3a74430e-7033-11e9-985c-0e55d9bc9e68","variantName":"Normal","cssFamilyName":"Founders Grotesk Mediu-Vekg34lF","cssFileURL":"fonts\/13793704-8659-4116-a468-bfa87c89ad17\/foundersgrotesk-medium.css","api":"Uploaded","woffFileURL":null},"Uploaded|a97fe582-3a23-11ed-9a0e-1295e118baa9":{"familyName":"Founders Grotesk Medium","familyGuid":"Uploaded|3a74014d-7033-11e9-985c-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":630,"variantGuid":"Uploaded|a97fe582-3a23-11ed-9a0e-1295e118baa9","variantName":"V2","cssFamilyName":"Founders Grotesk Mediu-uAoD5XFA","cssFileURL":"fonts\/e03b6109-702c-463f-bc5a-65fae9744e26\/founders-grotesk-medium-v2.css","api":"Uploaded","woffFileURL":null},"Uploaded|3aee372d-7033-11e9-985c-0e55d9bc9e68":{"familyName":"Founders Grotesk Regular","familyGuid":"Uploaded|3aee0047-7033-11e9-985c-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":630,"variantGuid":"Uploaded|3aee372d-7033-11e9-985c-0e55d9bc9e68","variantName":"Normal","cssFamilyName":"Founders Grotesk Regul-bhO15AR3","cssFileURL":"fonts\/d95bb316-8359-4e87-b852-a22a7ee26bfc\/foundersgrotesk-regular.css","api":"Uploaded","woffFileURL":null},"Uploaded|b056a763-3a23-11ed-9a0e-1295e118baa9":{"familyName":"Founders Grotesk Regular","familyGuid":"Uploaded|3aee0047-7033-11e9-985c-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":630,"variantGuid":"Uploaded|b056a763-3a23-11ed-9a0e-1295e118baa9","variantName":"V2","cssFamilyName":"Founders Grotesk Regul-1PfMypsh","cssFileURL":"fonts\/cca5b14d-6325-4f66-872f-dcf8f9e77f8a\/founders-grotesk-regular-v2.css","api":"Uploaded","woffFileURL":null},"Uploaded|ae97ed4c-bd0f-11e9-985c-0e55d9bc9e68":{"familyName":"Founders Grotesk Bold XCnd","familyGuid":"Uploaded|ae97c169-bd0f-11e9-985c-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":800,"variantGuid":"Uploaded|ae97ed4c-bd0f-11e9-985c-0e55d9bc9e68","variantName":"Founders Grotesk Bold XCond","cssFamilyName":"Founders Grotesk Bold -zkdrTaV0","cssFileURL":"fonts\/c604a5ab-fd6f-487a-9634-7f1210e4cb2e\/founders-grotesk-bold-xcond.css","api":"Uploaded","woffFileURL":null},"Uploaded|e6268f24-c78b-11ee-aa27-1295aa3866fd":{"familyName":"Founders Grotesk Bold XCnd","familyGuid":"Uploaded|ae97c169-bd0f-11e9-985c-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":800,"variantGuid":"Uploaded|e6268f24-c78b-11ee-aa27-1295aa3866fd","variantName":"Founders Grotesk Bold XCond 2","cssFamilyName":"Founders Grotesk Bold -551xLzHg","cssFileURL":"fonts\/32096f2d-87f1-4550-81e1-3daba7229768\/founders-grotesk-bold-xcond-2.css","api":"Uploaded","woffFileURL":null}},
+        whiteLabeling   : true,
+        isTrialAccount      : false,
+        allowCommerceIntegration  : false,
+        allowEmbeddedPlayerSdk    : true,
+        allowAdaptiveLayouts: true,
+            commerceSettings: {
+            panelWidth      : null,
+            panelHeight     : null,
+                productUrl: '',
+                shoppingCartUrl: '',
+            },
+                themeObj: {
+                arrowsEnabled    : true,
+                swipeEnabled     : true,
+                menuEnabled      : false,
+                    menuFgColor: '#FFFFFF',
+                    menuBgColor: '#000000',
+                    menuHoverOpacity: 0.6,
+                    backgroundColor: '#000000',
+                backgroundImage  :
+                        null
+
+                },
+            googleFontUrl: '',
+            featureFlags: {"Password Protected Experiences":true,"Getty Image Integration":false,"Getty Video Integration":false,"Accessibility":false,"(BETA) Protected Preview":false,"Cookie Compliance":true,"Position Interactions":true,"Editor":true,"New Text Tool":true,"Studio API":false,"SSO Protected Experiences":false,"Studio Redesign":true,"(New Text Tool) List And Bullets":false,"(New Text Tool) Subscript And Superscript":false,"(New Text Tool) Html Element":true,"(New Text Tool) Object States":false,"(New Text Tool) Spellcheck":false,"Editor for Creators":false,"Remove window.eval":true,"Editor Image Crop And Resize":true,"Editor Debug Mode":false,"Improved Team Management":true,"(New Text Tool) Columns":true,"Open in MarkUp":true,"Create Account from Login":true,"Individual Accounts":true,"New Text Tool Experience Converter (requires New Text Tool)":true,"Studio Lite":true,"Intercom Support Chat":true,"Editor Sign Up":true,"Beamer":true,"Showcase Experience":false,"Component Library":true,"SDR Editor Invite":false,"Force Protected Experiences":false,"Request Feedback":false,"PLG Account Creation":true,"Home Screen":true,"Seismic Integration":true,"New Selection Behavior":true,"AI Features":true,"Experience Sharing":true,"Show Import Design Files":true,"Player Server Side Rendering":false,"Floating Toolbar":true,"Getty Library Integration":false,"Use Embed Modal":true,"Onboarding":true,"Use Modern IpadOS Scrolling":true,"Allow importing PDF design files":true,"Hubspot Styling":false,"Asset Library - Ceros Assets":true,"Spark Experiences in Admin":true,"Export PDF":true,"New Selection Behavior - Mouse Up":false,"New Text Data Model Change":false,"Convert Experiences to Spark":false,"Folders":true,"New Variant Layouts":false,"Use JWTs":false,"Flex in Admin UI v2":true,"Organization Assets":false,"Stabilize Stroke in Object States":false,"Full Width Browser Scaling Fix":false,"Rest API: Embed Codes":false,"Pinned Hover Area Interaction Fix":false,"Disable Flex User Access Toggle":true,"Rest API: Media Metadata":true,"Chartblocks":false,"Flex AI Feature":true,"Rest API: Upload Policy":false,"Admin In Isolation":false,"Flex Ad in Admin":false,"Vanity Domains Polish":true,"Rest API: Video Transcoding":false,"Rest API: Background removal":true,"Rest API: Getty":false,"Appcues":true,"Rest API: Organizations":false,"Studio to Flex Copy":true,"Flex AI Experience Rebrand":false,"Flex AI Text to Video":false,"Rest API: Asset Library":false,"Rest API: Update Template":false,"Experience Report":true,"Rest API: Template Types":true,"Rest API: Vanity Domain":false,"Rest API: Organization Domains":false,"Vanity Domain Default Experience Fallback":true},
+            analyticsTrackers: {
+                cerosPlayerTracker: {enabled: true },
+                googleAnalyticsTracker: {"enabled":true,"trackingID":"G-189REVXGZH","trackPageViewsForStandaloneExperiences":true,"eventCategory":"ceros-event","trackClicks":true,"clickEventAction":"ceros-click","trackHovers":true,"hoverEventAction":"ceros-hover"},
+                googleTagManagerTracker: {"enabled":true,"containerID":"GTM-PD8X7DN","trackPageViewsForStandaloneExperiences":true,"eventCategory":"ceros-event","trackClicks":true,"clickEventAction":"ceros-click","trackHovers":true,"hoverEventAction":"ceros-hover","initializeGTMForEmbeddedExperiences":true},
+                marketoTracker: {enabled: false, accountId: '' },
+                eloquaTracker: {enabled: false, siteId: '', cookieDomain: ''},
+                universalAnalyticsTracker: {enabled: false }
+            },
+
+        
+            useOptimizedJs: true,
+        };
+    </script>
+
+    <!--
+      DISPLAY SETTINGS
+    -->
+        <meta name="viewport"
+                  content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta name="monitor-signature" content="monitor:player:html5"/>
+
+    <title>Acura NA Toolbox</title>
+
+
+
+
+
+    <meta property="og:title" content="Acura NA Toolbox"/>
+        <meta property="og:image" content="media/d5c3242d2c672ee0256ec7b14e06fef0/acura-benefits-04-22-page-1.jpg"/>
+    <meta property="og:description" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:type" content="website"/>
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Acura NA Toolbox">
+    <meta name="twitter:description" content="">
+        <meta name="twitter:image" content="media/af817878e91c9f88cfe8fae80c860413/page-thumbnail.jpg">
+
+    <script language="Javascript" id="docversion-request-script">
+        window.docVersionRequest = window.jQuery.ajax({
+            url           : "media/experience-version-6942d3cc81684.js",
+            dataType      : 'jsonp',
+            jsonp         : false, 
+            cache         : true,  
+            jsonpCallback : "loadDocVersion_v1_account_haworth_document_versions_experience_version_6942d3cc81684",
+            success       : window.jQuery.noop 
+        });
+    </script>
+
+    <!--
+      FONTS
+    -->
+
+
+    
+    
+        <!-- BEGIN GOOGLE ANALYTICS INTEGRATION HTML -->
+        <script async src="https://www.googletagmanager.com/gtag/js"></script>
+        <script>
+                if (top === window) {
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                    gtag('config', 'G-189REVXGZH', {
+                        send_page_view: false
+                    });
+                }
+        </script>
+        <!-- END GOOGLE ANALYTICS INTEGRATION HTML -->
+    
+
+
+    <!-- BEGIN FAVICON -->
+    <!-- END FAVICON -->
+
+    <script type="text/javascript">
+        window.cerosPlayerLoadStart = new Date();
+    </script>
+
+    <!--
+        Although the player itself no longer uses requirejs, users can still use requirejs with
+        the SDK. Therefore, we need to continue including it here... for now...
+    -->
+    <script
+        type="text/javascript"
+        src="assets/player/shared/libs/require/require-min.b03b66057d7df9b2cc9aa9c4c18aa569.js"
+        integrity="sha384-rH/J/VIetVJaWayhJ86b8lksGVJhUElxg9z9Y9OolMJqV4T70NX7Sp4smPbMzv0R"
+        crossorigin="anonymous"
+    >
+    </script>
+
+    <script
+        type="text/javascript"
+        async
+        charset="UTF-8"
+        src="assets/player/applications/html5-player/bootstrap-optimized.b66e574a610853909f0f5cbd9f610d5f.js"
+        integrity=""
+        crossorigin="anonymous"
+    >
+    </script>
+
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="assets/player/applications/html5-player/css/html5-player.f1c9752bdb20452cb9ce067cc5a32141.css"
+        integrity=""
+        crossorigin="anonymous"
+    />
+
+    <style>
+        body {
+            background-color: #000000;
+        }
+
+        body:-ms-fullscreen::-ms-backdrop {
+            background-color: #000000;
+        }
+    </style>
+
+</head>
+<body>
+
+
+        <!-- BEGIN GOOGLE TAG MANAGER INTEGRATION HTML -->
+        <noscript>
+            <iframe src="//www.googletagmanager.com/ns.html?id=GTM-PD8X7DN"
+                    height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <script>
+
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(), event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                    '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PD8X7DN');
+
+        </script>
+        <!-- END GOOGLE TAG MANAGER INTEGRATION HTML -->
+
+
+    <noscript>
+        
+            <div class="page"><img src="media/148092ccdc9b70a57f422e9ed00be661/haworth-logo-tm-full.png" alt=""  class="image-component"/>
+<img src="media/0fe2bf96643a1faabdc5d33f2971c9de/screenshot-2023-01-20-at-4-24-35-pm-full.png" alt=""  class="image-component"/>
+<img src="media/fa7e8c2bad36dbc75d4cc77f8ee13db0/screenshot-2023-01-20-at-4-24-02-pm-full.png" alt=""  class="image-component"/>
+<p class="text-component">Dealer Specification Guide</p>
+<p class="text-component">Client Lookbook</p>
+<p class="text-component">Dealer Brochure</p>
+<p class="text-component">The primary tool for Haworth dealer partners to guide Acura dealership clients in furniture selection and decision making, to align to the client’s approved furniture standards. The Dealer Guideline contains details for the pre-approved brand standard furniture selections, finishes, and applications.</p>
+<img src="media/f39ca8bf775f6ebcbd0a9edfd60abc0e/mazda-process-maps-p4-full.jpg" alt=""  class="image-component"/>
+<img src="media/af2cdd2bdfb7da6354b43aea97a445f1/logo-white-full.png" alt=""  class="image-component"/>
+<p class="text-component">Client Brochure</p>
+<p class="text-component">The client brochure assists Acura car dealership clients as they embark on their furniture selection and decision-making journey. To ensure they align with the pre-approved Acura brand standards, furniture selections, finishes and applications available through Haworth. This brochure can be printed or emailed to the car dealership client to preview.</p>
+<p class="text-component">Proposal Template</p>
+<p class="text-component">A branded proposal template is available for Haworth Dealer Partners to utilize - reinforcing the Acura brand and a consistent aesthetic for all Acura Dealership opportunities. The template includes floor plan views with area callouts, furniture renderings, finishes, and pricing proposal location.</p>
+<p class="text-component">Order Development & Execution Process</p>
+<p class="text-component">Acura and ChangeUp strictly enforce standards. With that in mind, we have mapped out the necessary steps of the order process to use as a reference. This will aid in developing a detailed and complete submittal that is faster and streamlined.</p>
+<p class="text-component">SpecCheck Process</p>
+<p class="text-component">Hawoth offers a SpecCheck of your proposal before order entry. This step ensures that your package is clear of errors and that Acura's standards are met. SpecCheck reviews are turned around within 24 hours of submittal.</p>
+<img src="media/a696cbf50efd0ba4925865f011ac5d01/screen-shot-2021-06-09-at-6-56-33-pm-full.png" alt=""  class="image-component"/>
+<img src="media/1f82477bf198e1bb09a37d428fbd28d3/screen-shot-2021-06-09-at-6-45-31-pm-full.png" alt=""  class="image-component"/>
+<img src="media/92744fabd19e19026ea679691a27185d/x-icon.svg" alt=""  class="image-component"/>
+<img src="media/92744fabd19e19026ea679691a27185d/x-icon.svg" alt=""  class="image-component"/>
+<img src="media/c058a9edd918d989075200205db9ab94/processed-svg-page-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">CAD/SIF/CET Typicals</p>
+<p class="text-component">CET, CAD and SIF files are available for reference and download. Please note all Haworth Dealer Partners are responsible for reviewing all files for accuracy and adherence to the furniture standards, clients floorplan, architectural nuances of the space, as-built conditions, and accurately specified before order submittal.</p>
+<p class="text-component">Welcome to Haworth's Acura Car Dealer Program</p>
+<p class="text-component">On this site you will find resources to assist as you partner with Acura, ChangeUp, Car Dealership Clients and Haworth. Acura established car dealership furniture standards to ensure brand and aesthetics through dealership showrooms are aligned. The standards are enforced by Acura and ChangeUp. Please let us know if you have any questions.</p>
+<p class="text-component">Leslie Levinski
+Global Account Executive
+e: leslie.levinski@haworth.com</p>
+<p class="text-component">CANVAS</p>
+<img src="media/2694ff6b3804432de3467fd567ab437f/file-full.png" alt=""  class="image-component"/>
+<p class="text-component">Proposal Template</p>
+<img src="media/6172bce4097c5933db3b10508424b77e/acura-proposal-template-02-09-2022-page-03-full.jpg" alt=""  class="image-component"/>
+<p class="text-component">CLIENT TOOLS</p>
+<p class="text-component">INTERNAL TOOLS</p>
+<p class="text-component">Client Digital Experience</p>
+<img src="media/5e71fbc99e893ad9855990c165d1ebc0/screen-shot-2021-04-14-at-2-24-40-pm-full.png" alt=""  class="image-component"/>
+<p class="text-component">The client digital experience is a toolbox for Acura car dealership clients to ensure they align with the pre-approved Acura brand standards, benefits, program advantages, warranty, care and maintenance information for applications available through Haworth. The digital toolbox can be emailed via a link to the car dealership client for reference.</p>
+<p class="text-component">Client Digital Experience</p>
+<p class="text-component">Order Development and Execution Process</p>
+<img src="media/d50fff70b5efd5011c41fc792fd51401/honda-specchec-process-map-5-18-2021-full.jpg" alt=""  class="image-component"/>
+<p class="text-component">SpecCheck Process</p>
+<p class="text-component">Haworth offers a complimentary spec check of your final proposal to ensure it adheres to Acura’s approved furniture selections.</p>
+<p class="text-component">Client Introduction
+Tools</p>
+<p class="text-component">Introduction tools</p>
+<p class="text-component">Editable templates to help you with your introduction to the client. The letter and flier point out the benefits of the Haworth partnership.</p>
+<img src="media/a37ea6f52dfc96e0b7b09191eaa94646/processed-svg-folder-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">REVIT Files</p>
+<img src="media/a32f574b2d56b3e84932ca15a35b6b29/processed-svg-folder-icon.svg" alt=""  class="image-component"/>
+<p class="text-component">Haworth Revit families have been built to optimize A&D designs with graphical representation, dimensional accuracy, light file sizes, and superior quality. All content is supported for Revit 2018 and newer.
+Haworth Revit content is available in several options. You can search for your desired products through individual families, download all families in one zip file, view the product line project files to select desired families, or use our parametric workstations for preliminary space planning. </p>
+<p class="text-component">REVIT Files</p>
+<img src="media/121524c209c8b4815f13aee528e8534a/acura-symbol-1990-1920x1080-full.png" alt=""  class="image-component"/>
+<p class="text-component">Benefits & Advantages Flyer</p>
+<img src="media/d5c3242d2c672ee0256ec7b14e06fef0/acura-benefits-04-22-page-1-full.jpg" alt=""  class="image-component"/>
+<p class="text-component">Acura Flyer
+(Benefits & Advantage)</p>
+<p class="text-component">Haworth is Acura’s exclusive partner in fitting out Acura dealerships throughout North America. We want to give you a glimpse of what makes Haworth the right partner for your dealership as you move forward with projects now and into the future.</p>
+<img src="media/9ee421c62aed090885b4849c4aa508a0/screenshot-2023-01-27-at-11-32-23-am-full.png" alt=""  class="image-component"/>
+<p class="text-component">Order & Compliance Process</p>
+<p class="text-component">Program News 
+& Updates</p>
+<img src="media/d7fc6a789b2f161a09fb319569d293ff/image-full.png" alt=""  class="image-component"/>
+<p class="text-component">Neil Fritsch
+Lead Program Manager
+e: neil.fritsch@haworth.com
+</p>
+<p class="text-component">@ 2023 Haworth, Inc.</p>
+<p class="text-component">Cookie Policy</p>
+<p class="text-component">Terms of Use</p>
+<p class="text-component">Privacy Policy</p>
+<img src="media/d61f3f894e4532d349c5b879363ca507/processed-svg-hawroth-chevronasset-1.svg" alt=""  class="image-component"/>
+<p class="text-component">Process Map</p>
+<img src="media/58859e7387109fc91b8e070f4ff192aa/screenshot-2024-02-15-at-7-24-08-pm-full.png" alt=""  class="image-component"/>
+<p class="text-component">Proposal Template</p>
+<p class="text-component">Lead Times</p>
+<p class="text-component">Lisa Dupuis
+Program Manager
+e: lisa.dupuis@Haworth.com</p></div>
+    </noscript>
+
+
+<div id="main"></div>
+<div id="backgroundContainer"></div>
+
+
+    <!-- BEGIN CUSTOM HTML -->
+    
+    <!-- END CUSTOM HTML -->
+
+
+
+    <div id="page-transition-aria-live" class="sr-only" aria-live="assertive"></div>
+</body>
+</html>

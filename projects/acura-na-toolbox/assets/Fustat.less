@@ -1,0 +1,17 @@
+.FustatFontFace(@fontName, @fontWeight, @fontStyle) {
+  @font-face {
+    font-family: 'Fustat';
+    src: url('../fonts/@{fontName}.woff2') format('woff2'),
+      url('../fonts/@{fontName}.woff') format('woff');
+    font-weight: @fontWeight;
+    font-style: @fontStyle;
+  }
+}
+
+.FustatFontFace('Fustat-ExtraLight', 200, 'normal');
+.FustatFontFace('Fustat-Light', 300, 'normal');
+.FustatFontFace('Fustat-Regular', 400, 'normal');
+.FustatFontFace('Fustat-Medium', 500, 'normal');
+.FustatFontFace('Fustat-SemiBold', 600, 'normal');
+.FustatFontFace('Fustat-Bold', 700, 'normal');
+.FustatFontFace('Fustat-ExtraBold', 800, 'normal');
